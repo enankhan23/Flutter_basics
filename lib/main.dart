@@ -1,10 +1,12 @@
 import 'package:first_project/widgets/alert.dart';
 import 'package:first_project/widgets/animated_text.dart';
+import 'package:first_project/widgets/bottomnav.dart';
 import 'package:first_project/widgets/bottomsheet.dart';
 import 'package:first_project/widgets/button.dart';
 import 'package:first_project/widgets/container_sized.dart';
 import 'package:first_project/widgets/dismissible.dart';
 import 'package:first_project/widgets/drawer.dart';
+import 'package:first_project/widgets/dropdown.dart';
 import 'package:first_project/widgets/image.dart';
 import 'package:first_project/widgets/list_grid.dart';
 import 'package:first_project/widgets/rowscols.dart';
@@ -22,8 +24,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:false ,
       theme: ThemeData(
-        brightness: Brightness.light, primaryColor: Colors.orange),
-      home:AnimatedTextWidget(),
+        brightness: Brightness.light, primaryColor: Colors.green),
+      home:DropDownWidget(),
     );
   }
 }
