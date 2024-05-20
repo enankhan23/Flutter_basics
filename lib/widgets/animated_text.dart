@@ -14,13 +14,42 @@ class AnimatedTextWidget extends StatelessWidget {
         ),
         backgroundColor: Theme.of(context).primaryColor,
       ),
-      body: Column(
-        children: [
-          AnimatedTextKit(animatedTexts: [
-            TypewriterAnimatedText('Enan Abdullah Khan',
-                textStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),speed: Duration(milliseconds: 150))
-          ])
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            AnimatedTextKit(
+              animatedTexts: [
+                TypewriterAnimatedText('Enan Abdullah Khan',
+                    textStyle:
+                        TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+                    speed: Duration(milliseconds: 150))
+              ],
+              // totalRepeatCount: 4,
+              // pause: Duration(milliseconds: 80),
+              // displayFullTextOnTap: true,
+              // stopPauseOnTap: true,
+            ),
+            AnimatedTextKit(animatedTexts: [
+              RotateAnimatedText('Hello',
+                  textStyle: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.red),)
+            ]),
+            AnimatedTextKit(animatedTexts: [
+              RotateAnimatedText('World',
+                  textStyle: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.deepPurple),)
+            ]),
+            AnimatedTextKit(animatedTexts: [
+              WavyAnimatedText('Yolo ', textStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
+              WavyAnimatedText('Polo ', textStyle: TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
+            ])
+          ],
+        ),
       ),
     );
   }
