@@ -9,6 +9,7 @@ import 'package:first_project/widgets/drawer.dart';
 import 'package:first_project/widgets/dropdown.dart';
 import 'package:first_project/widgets/form.dart';
 import 'package:first_project/widgets/image.dart';
+import 'package:first_project/widgets/imagepicker.dart';
 import 'package:first_project/widgets/list_grid.dart';
 import 'package:first_project/widgets/rowscols.dart';
 import 'package:first_project/widgets/snackbar.dart';
@@ -27,8 +28,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:false ,
       theme: ThemeData(
-        brightness: Brightness.dark, primaryColor: Colors.green),
-      home:TabBarWidget(),
+        brightness: Brightness.light, primaryColor: Colors.green),
+      home:ImagePickerWidget(),
     );
   }
 }
