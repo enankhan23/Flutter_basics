@@ -13,6 +13,7 @@ import 'package:first_project/widgets/list_grid.dart';
 import 'package:first_project/widgets/rowscols.dart';
 import 'package:first_project/widgets/snackbar.dart';
 import 'package:first_project/widgets/stack.dart';
+import 'package:first_project/widgets/tabbar.dart';
 import 'package:flutter/material.dart';
 
 
@@ -26,8 +27,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:false ,
       theme: ThemeData(
-        brightness: Brightness.light, primaryColor: Colors.green),
-      home:StackWidget(),
+        brightness: Brightness.dark, primaryColor: Colors.green),
+      home:TabBarWidget(),
     );
   }
 }
