@@ -4,6 +4,7 @@ import 'package:first_project/widgets/bottomnav.dart';
 import 'package:first_project/widgets/bottomsheet.dart';
 import 'package:first_project/widgets/button.dart';
 import 'package:first_project/widgets/container_sized.dart';
+import 'package:first_project/widgets/day19.dart';
 import 'package:first_project/widgets/dismissible.dart';
 import 'package:first_project/widgets/drawer.dart';
 import 'package:first_project/widgets/dropdown.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner:false ,
       theme: ThemeData(
         brightness: Brightness.light, primaryColor: Colors.green),
-      home:ImagePickerWidget(),
+      home:Day19(),
     );
   }
 }
