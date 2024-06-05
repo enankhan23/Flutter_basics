@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601241526881",
+    "project_id": "flutter-project-akshit",
+    "storage_bucket": "flutter-project-akshit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601241526881:android:ea66c26cbc86574830c020",
+        "android_client_info": {
+          "package_name": "com.example.first_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn1epAJef4I6hZxB44aZojGSPF28jl_DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
