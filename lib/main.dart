@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:first_project/firebase_options.dart';
 import 'package:first_project/widgets/alert.dart';
@@ -9,6 +10,7 @@ import 'package:first_project/widgets/container_sized.dart';
 import 'package:first_project/widgets/day19.dart';
 import 'package:first_project/widgets/day20.dart';
 import 'package:first_project/widgets/day24.dart';
+import 'package:first_project/widgets/day25.dart';
 import 'package:first_project/widgets/dismissible.dart';
 import 'package:first_project/widgets/drawer.dart';
 import 'package:first_project/widgets/dropdown.dart';
@@ -39,8 +41,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.dark, primaryColor: Colors.purple),
-      home: Day24Authentication(),
+      theme:
+          ThemeData(brightness: Brightness.dark, primaryColor: Colors.purple),
+      home: StreamBuilder(
+          stream: FirebaseAuth.instance.authStateChanges(),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return DatabaseOptions();
+            } else {
+              return Day24Authentication();
+            }
+          }),
     );
   }
 }
